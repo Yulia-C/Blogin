@@ -1,0 +1,31 @@
+/* flex helpers */
+
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+/* list helpers */
+
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* border helper */
+
+.border-inline {
+    border-inline: solid 1px var(--clr-primary-base-3);
+}
+
+.border-top {
+    border-top: solid 1px var(--clr-primary-base-3);
+}

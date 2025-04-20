@@ -1,0 +1,122 @@
+/* Mobile only */
+@media (max-width:920px) {
+    .border-inline {
+        border-inline: none;
+    }
+
+    .border-top {
+        border-top: none;
+    }
+
+    header {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 1;
+    }
+
+    .main-nav {
+
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+
+        opacity: .97;
+        background-color: var(--clr-primary-base);
+        border-inline-start: none;
+
+        display: grid;
+        grid-template-rows: 0fr;
+        overflow: hidden;
+        transition: grid-template-rows 1s;
+        align-content: end;
+
+    }
+
+    .main-nav-list {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        align-self: end;
+    }
+
+    .main-nav-list>li {
+        border-bottom: 1px solid black;
+
+    }
+
+    .main-nav-list>li>a {
+        font-size: 2em;
+        width: 100%;
+        height: auto;
+        padding-block: 2em;
+    }
+
+    .card>.card-img {
+        margin-bottom: 1.5em;
+    }
+
+    .card>.card-content>p:last-of-type {
+        margin-bottom: 2.5em;
+    }
+    .card>.card-content>button>.main-screen {
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    body.menu-open .main-nav {
+        grid-template-rows: 1fr;
+        box-shadow: 0px 10px 10px 0px rgb(139, 138, 138);
+    }
+
+}
+
+
+/* small */
+@media (min-width:920px) {
+    html {
+        font-size: 1em;
+    }
+
+    .main-layout {
+        grid-template-columns: minmax(20px, 1fr) minmax(auto, 1020px) minmax(20px, 1fr);
+    }
+
+    .main-logo {
+        margin-inline-start: 0px;
+        font-size: 2.5em;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .card-title {
+        font-size: 1.75rem;
+    }
+
+    .read-more-dialog {
+        border: 2px solid var(--clr-primary-base-2);
+        position: fixed;
+        top: 50%;
+        bottom: 50%;
+
+        max-width: 50%;
+        height: 50%;
+    }
+
+    .read-more-dialog>.text {
+        font-size: 1.1rem;
+    }
+    body.menu-open .main-screen {
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    .btn-toggle-menu {
+        display: none;
+    }
+
+}

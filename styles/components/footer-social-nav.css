@@ -1,0 +1,28 @@
+
+.footer-social-nav>.social {
+    font-size:1em;
+    border: none;
+    background-color:var(--clr-primary-base-3);
+    color:white;
+    width: 43px;
+    height: 41px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.social:hover.facebook{
+    background-color:rgb(61, 61, 228);
+}
+.social:hover.twitter{
+    background-color:rgb(98, 195, 187);
+}
+.social:hover.behance{
+    background-color:rgb(15, 124, 208);
+}
+.social:hover.dribbble{
+    background-color:rgb(219, 83, 153);
+}
+
+.social:not(:nth-last-of-type(4)) {
+    margin-inline-start: 17px;
+}

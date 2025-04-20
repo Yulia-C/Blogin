@@ -1,0 +1,25 @@
+/* Main Layout  */
+.main-layout {
+    display: grid;
+    /* grid-template-columns: 1fr 983px 1fr; */
+    grid-template-columns: 20px 1fr 20px;
+}
+
+.main-layout>*:not(.full) {
+    grid-column: 2;
+}
+
+.main-layout>.full {
+    grid-column: 1 / -1;
+}
+
+.main-content:not(:first-child){
+    padding-top: 80px;
+}
+
+/* header layout */
+header {
+    display: grid;
+    grid-template-columns: subgrid;
+}
+

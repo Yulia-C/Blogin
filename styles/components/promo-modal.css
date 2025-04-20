@@ -1,0 +1,40 @@
+.read-more-dialog {
+
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    height: calc(100% - (70px));
+
+    display: grid;
+    grid-auto-flow: row;
+    display: block;
+    align-content: center;
+}
+
+.read-more-dialog.none {
+    display: none;
+}
+
+.read-more-dialog>.text {
+    color: var(--clr-primary-base-2);
+    font-family: lato-regular, sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.read-more-dialog>.text>form {
+    font-family: lato-bold, sans-serif;
+}
+
+.read-more-dialog>.text>.cfa {
+    font-size: 1.2em;
+    font-family: lato-bold, sans-serif;
+    color: var(--cle-brand-base)
+}
+
+.read-more-dialog>.text>button {
+    grid-row: 5;
+    font-size: 1.2em;
+    margin-top: 1em;
+    width: 8em;
+}

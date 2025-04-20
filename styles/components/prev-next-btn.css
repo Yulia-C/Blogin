@@ -1,0 +1,33 @@
+.main-nav-prev-next {
+    height: 74px;
+
+}
+
+.prev,
+.next {
+    color: var(--clr-primary-base-2);
+    font-size: 1.125em;
+    text-transform: uppercase;
+    margin-inline: 54px;
+
+    position: relative;
+
+}
+
+.left {
+    position:absolute;
+    left: -30px;
+    top:-5px;
+    font-size:1.4em;
+}
+.right {
+    position:absolute;
+    right: -30px;
+    top:-5px;
+    font-size: 1.4em;
+}
+
+.prev:hover,
+.next:hover {
+    font-size: 1.225em;
+}

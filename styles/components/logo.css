@@ -1,0 +1,10 @@
+.main-logo {
+    color: white;
+    font-size: 4em;
+}
+
+.footer-logo{
+    color: var(--clr-primary-base);
+    margin-block-start: 60px;
+    margin-block-end: 0;
+}

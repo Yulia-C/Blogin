@@ -1,0 +1,13 @@
+footer {
+    display: grid;
+    grid-template-columns: subgrid;
+    place-items: center;
+}
+
+.footer-text {
+    margin-block: 33px;
+}
+
+.footer-text>a {
+    color:var(--clr-primary-base-2);
+}

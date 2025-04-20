@@ -1,0 +1,47 @@
+
+
+.main-nav a {
+    display: grid;
+    place-items: center;
+    height: 8.125rem;
+    width: 8.125rem;
+
+    font-family: lato-bold, sans-serif;
+    font-size: 1em;
+    color: var(--clr-txt-header);
+
+    transition: .2s;
+}
+
+.main-nav a.active{
+    box-shadow: inset 0px -5px 0 0 var(--cle-brand-base);
+    color: var(--cle-brand-base);
+
+}
+
+.main-nav a:hover {
+    color: var(--cle-brand-base);
+    box-shadow: inset 0px -5px 0 0 var(--cle-brand-base);
+}
+
+
+.btn-toggle-menu {
+    width: fit-content;
+    position: fixed;
+    right: 20px;
+    background-color: #00000000;
+    color: whitesmoke;
+    border: none;
+    font-size: 4em;
+    cursor: pointer;
+}
+.btn-toggle-menu::before{
+    content: '☰';
+} 
+body.menu-open .btn-toggle-menu::before{
+    content: '';
+} 
+body.menu-open .btn-toggle-menu::after{
+    content: 'X';
+} 
+

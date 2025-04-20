@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin.</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="main-layout">
+    <div onclick="ontoggleMenu()" class="main-screen"></div>
+
+    <header class="main-layout main-header full">
+        <div class="wrapper flex space-between align-center">
+
+
+            <div class="main-logo logo">Blogin<span class="dot">.</span></div>
+            <button onclick="ontoggleMenu()" type="button" class="btn-toggle-menu"></button>
+            <nav class="main-nav">
+                <ul class="main-nav-list flex clean-list">
+                    <li><a class="active" href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content card-layout border-inline">
+        <div class="card main-content">
+            <img class="card-img" src="img/001.jpeg" alt="001">
+            <section class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat
+                    nulla pariatur...
+                </p>
+                <button class="button rounded arrow" onclick="onToggleDialog()">Continue Reading<span
+                        class="arrow"></span> </button>
+            </section>
+        </div>
+
+        <div class="card main-content">
+            <img class="card-img" src="img/002.jpeg" alt="002">
+            <section class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat
+                    nulla pariatur...
+                </p>
+                <button class="button rounded arrow" onclick="onToggleDialog()">Continue Reading<span class="arrow"></span> </button>
+            </section>
+        </div>
+
+        <div class="card main-content">
+            <img class="card-img" src="img/003.jpeg" alt="003">
+            <section class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat
+                    nulla pariatur...
+                </p>
+                <button class="button rounded arrow" onclick="onToggleDialog()">Continue Reading<span class="arrow"></span> </button>
+            </section>
+        </div>
+
+        <div class="padding main-content">
+            <nav class="main-nav-prev-next flex space-between align-center border-top ">
+                <a href="#" class="prev"><span class="left">⭠</span> Previous</a>
+                <a href="#" class="next">Next <span class="right">➝</span></a>
+            </nav>
+        </div>
+    </main>
+
+    <dialog class="read-more-dialog none">
+        
+        <div class="text">
+            <h2>Duis aute irure dolor in
+                henderit in voluptate.</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur...</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur...</p>
+            <p class="cfa">Join us to get access to the latest stories!</p>
+            <form method="dialog" onsubmit="onSubmit(this)">
+                <label for="email">E-mail:</label>
+                <input placeholder="Your-email@email.com" type="email" id="email" name="email">
+            </form>
+            <button onclick="onToggleDialog()" class="button">Submit</button>
+        </div>
+    </dialog>
+
+    <footer class="main-footer full main-layout border-top">
+        <h2 class="footer-logo logo">Blogin<span class="dot">.</span></h2>
+        <p class="footer-text">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a
+                href="#">Pixelhint.com</a></p>
+        <section class="footer-social-nav margin-block-end">
+            <button class="social fa facebook"></button>
+            <button class="social fa twitter"></button>
+            <button class="social fa behance"></button>
+            <button class="social fa dribbble"></button>
+        </section>
+    </footer>
+
+    <script>
+        function ontoggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
+
+        function onToggleDialog() {
+            const elModal = document.querySelector('.read-more-dialog')
+            elModal.classList.toggle('none') 
+        }
+    
+    </script>
+</body>
+
+</html>

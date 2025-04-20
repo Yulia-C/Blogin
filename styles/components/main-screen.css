@@ -1,0 +1,20 @@
+.main-screen {
+    background-color: rgba(35, 35, 35, 0.307);
+    inset: 0;
+    position: fixed;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+
+    transition: opacity 600ms;
+}
+
+body.menu-open .main-screen {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* body.menu-open .main-nav{
+    max-height: 100vh;
+    transition: 1s
+} */

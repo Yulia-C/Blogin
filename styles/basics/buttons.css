@@ -1,0 +1,43 @@
+.button {
+    font-family: lato-bold, sans-serif;
+    background-color: transparent;
+    color: var(--clr-primary-base-3);
+    border: 2px solid var(--clr-primary-base-3);
+
+    margin-top: auto;
+    padding: .5em 1.4em;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+.button.rounded {
+    border-radius: 2em;
+}
+
+.button:hover {
+    color: var(--cle-brand-base);
+    border-color: var(--cle-brand-base);
+}
+/* Arrow btns */
+.button.arrow{
+    transition: padding .4s;
+    position: relative;
+    
+}
+
+.button.arrow:after {
+    content: '➝';
+    position: absolute;
+    right: .9em;
+    opacity: 0;
+}
+
+.button.arrow:hover::after {
+    transition: opacity .3s .3s;
+    opacity: 1;
+}
+
+.button.arrow:hover {
+    padding-inline-end: 2.5em;
+}

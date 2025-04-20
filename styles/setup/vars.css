@@ -1,0 +1,28 @@
+/* pallette */
+:root {
+    --clr-outline: #e1e0e0;
+
+    /* --clr-bcg-header: #292929; */
+    /* --clr-primary-base-2: #606060; */
+    /* --clr-secondary-base: #4f4e4e; */
+    /* --clr-primary-base-3: #c2c2c2; */
+    --clr-primary-base: #292929;
+    --clr-primary-base-1: #4f4e4e;
+    --clr-primary-base-2: #606060;
+    --clr-primary-base-3: #c2c2c2;
+    --clr-primary-base-4: #f8f8f8;
+    
+    --clr-txt-header: #ffffff;
+
+    --cle-brand-base: #58c93a;
+
+
+
+    --clr-btn-social: #516fad;
+
+    /* layout  */
+    --s: 650px;
+    --m: 740px;
+    --l: 983px;
+
+}
